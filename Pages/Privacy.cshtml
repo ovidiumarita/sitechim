@@ -1,0 +1,38 @@
+﻿@page
+@{
+    ViewData["Title"] = "Informații";
+}
+<h1>Informații</h1>
+<p>Website realizat de Ciocotisan David si Marita Ovidiu, clasa a 11-a D, Colegiul National "Vasile Lucaciu", Baia Mare</p>
+<p>Acest site este un proiect realizat cu scopul de a prezenta informatii despre chimia organica.</p>
+<div class="text-center" style="margin-top: 40px;">
+    <a href="/" class="btn btn-primary inapoi-btn">
+        Înapoi acasă
+    </a>
+</div>
+<style>
+    .inapoi-btn {
+        padding: 12px 32px;
+        font-size: 1.1rem;
+        border-radius: 24px;
+        border: none;
+        margin-top: 24px;
+        box-shadow: 0 2px 12px 0 rgba(35,41,70,0.08);
+        background: inherit !important;
+        color: inherit !important;
+        transition: background 0.2s, color 0.2s;
+    }
+    .inapoi-btn:hover, .inapoi-btn:focus {
+        background: rgba(0,0,0,0.06) !important;
+        color: inherit !important;
+        text-decoration: none;
+    }
+    body.theme-dark .inapoi-btn {
+        background: #232946 !important;
+        color: #eebbc3 !important;
+    }
+    body.theme-dark .inapoi-btn:hover, body.theme-dark .inapoi-btn:focus {
+        background: #393e6e !important;
+        color: #eebbc3 !important;
+    }
+</style>

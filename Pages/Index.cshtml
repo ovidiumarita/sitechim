@@ -1,0 +1,423 @@
+﻿@page
+@{
+    ViewData["Title"] = "Chimie organică";
+}
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/site.css" />
+<style type="text/css">
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 260px;
+        height: 100vh;
+        background: #f8f9fa;
+        border-right: 1px solid #ddd;
+        padding: 40px 20px 20px 20px;
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .sidebar label {
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+    .sidebar select {
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .main-content {
+        margin-left: 280px;
+        padding: 40px 20px;
+        background: none !important;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .theme-dark, .theme-dark .main-content, .theme-dark .main-content *, .theme-dark label, .theme-dark p, .theme-dark h1, .theme-dark h2, .theme-dark h3, .theme-dark h4, .theme-dark h5, .theme-dark h6, .theme-dark span, .theme-dark div, .theme-dark a, .theme-dark li, .theme-dark td, .theme-dark th {
+        color: #eebbc3 !important;
+    }
+    .theme-dark body, .theme-dark, .theme-dark * {
+        color: #eebbc3 !important;
+    }
+    .search-results-list {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 400px;
+        width: 100%;
+        background: #f8f9fa !important;
+        border-radius: 16px;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+        z-index: 2000;
+        margin-top: 4px;
+        padding: 0;
+        list-style: none;
+        overflow-y: auto;
+        max-height: 260px;
+        border: 1px solid #ddd;
+        overflow-x: hidden;
+    }
+    .search-results-list li {
+        padding: 12px 20px;
+        cursor: pointer;
+        background: #f8f9fa !important;
+        color: #232946;
+        transition: background 0.2s, color 0.2s;
+    }
+    .search-results-list li:hover, .search-results-list li.active {
+        background: #e0e0e0 !important;
+        color: #232946;
+    }
+    .theme-dark .search-results-list {
+        background: #232946;
+        border-color: #444;
+        color: #eebbc3;
+    }
+    .theme-dark .search-results-list li {
+        background: #232946;
+        color: #eebbc3;
+    }
+    .theme-dark .search-results-list li:hover, .theme-dark .search-results-list li.active {
+        background: #393e6e;
+        color: #eebbc3;
+    }
+    .accordion {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+    .accordion-item {
+        background: none;
+        border: none;
+        padding: 0;
+    }
+    .accordion-header {
+        width: 100%;
+        background: none;
+        border: none;
+        outline: none;
+        font-size: 1.13rem;
+        font-weight: bold;
+        color: #232946;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0 10px 0;
+        cursor: pointer;
+        transition: color 0.2s;
+    }
+    .accordion-header[aria-expanded="true"] {
+        color: #3b5fff;
+    }
+    .accordion-arrow {
+        font-size: 1.1em;
+        transition: transform 0.2s;
+    }
+    .accordion-header[aria-expanded="true"] .accordion-arrow {
+        transform: rotate(180deg);
+    }
+    .accordion-panel {
+        padding-left: 8px;
+        margin-bottom: 0;
+        transition: max-height 0.2s;
+    }
+    .sidebar-list {
+        list-style: none;
+        margin: 0;
+        padding: 0 0 0 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+    .sidebar-list li a {
+        display: block;
+        padding: 7px 12px;
+        border-radius: 8px;
+        color: #232946;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: background 0.18s, color 0.18s;
+    }
+    .sidebar-list li a:hover, .sidebar-list li a:focus {
+        background: #e0e0e0;
+        color: #3b5fff;
+    }
+    .theme-dark .sidebar, .theme-dark .accordion-item {
+        background: #232946 !important;
+        border-color: #393e6e !important;
+    }
+    .theme-dark .accordion-header {
+        color: #eebbc3;
+    }
+    .theme-dark .accordion-header[aria-expanded="true"] {
+        color: #eebbc3;
+    }
+    .theme-dark .sidebar-list li a {
+        color: #eebbc3;
+    }
+    .theme-dark .sidebar-list li a:hover, .theme-dark .sidebar-list li a:focus {
+        background: #393e6e;
+        color: #eebbc3;
+    }
+    body, .main-content, .sidebar, .accordion-header, .sidebar-list li a, .search-results-list li, .theme-toggle-btn {
+        font-family: 'Poppins', Arial, sans-serif !important;
+    }
+    .main-content .glass-card {
+        background: rgba(255,255,255,0.7);
+        border-radius: 32px 8px 32px 8px;
+        box-shadow: 0 8px 32px 0 rgba(31,38,135,0.18);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border: 1.5px solid rgba(255,255,255,0.18);
+        padding: 32px 24px;
+        margin: 0 auto 32px auto;
+        max-width: 600px;
+        transition: box-shadow 0.2s, transform 0.2s;
+        position: relative;
+        padding-top: 72px;
+    }
+    .main-content .glass-card:hover {
+        box-shadow: 0 12px 40px 0 rgba(31,38,135,0.22);
+        transform: translateY(-4px) scale(1.015);
+    }
+    .theme-dark .main-content .glass-card {
+        background: rgba(35,41,70,0.82);
+        border: 1.5px solid rgba(238,187,195,0.10);
+    }
+
+    .page-loader {
+        position: fixed;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(255,255,255,0.7);
+        z-index: 5000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: opacity 0.3s;
+    }
+    .theme-dark .page-loader {
+        background: rgba(35,41,70,0.85);
+    }
+    .spinner {
+        width: 54px; height: 54px;
+        border: 6px solid #eebbc3;
+        border-top: 6px solid #3b5fff;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+    } 
+    .theme-toggle-btn {
+        position: fixed;
+        top: 24px;
+        right: 24px;
+        padding: 12px 32px;
+        border-radius: 24px;
+        font-size: 1.08rem;
+        font-weight: 600;
+        background: linear-gradient(90deg, #3b5fff 60%, #eebbc3 100%);
+        color: #fff;
+        border: none;
+        box-shadow: 0 2px 12px rgba(59,95,255,0.10);
+        transition: all 0.2s;
+        cursor: pointer;
+        outline: none;
+        z-index: 1000;
+        overflow: hidden;
+    }
+    
+    .theme-toggle-btn:hover {
+        box-shadow: 0 4px 16px rgba(59,95,255,0.18);
+        transform: translateY(-1px);
+    }
+    
+    .theme-toggle-btn:active {
+        background: linear-gradient(90deg, #eebbc3 60%, #3b5fff 100%);
+        color: #232946;
+    }
+    
+    .theme-dark .theme-toggle-btn {
+        background: linear-gradient(90deg, #393e6e 60%, #eebbc3 100%);
+        color: #eebbc3;
+    }
+
+    .main-content .glass-card {
+        overflow: hidden;
+        position: relative;
+    }
+    .ripple {
+        position: absolute;
+        border-radius: 50%;
+        transform: scale(0);
+        animation: ripple 0.5s linear;
+        background: rgba(59,95,255,0.18);
+        pointer-events: none;
+    }
+</style>
+<link rel="stylesheet" href="/css/sidebar-responsive.css" />
+
+<div class="sidebar">
+    <div class="accordion" id="sidebarAccordion">
+        <div class="accordion-item">
+            <button class="accordion-header" type="button" aria-expanded="false" aria-controls="reactiiPanel" onclick="toggleAccordion('reactiiPanel', this)">
+                <span>Reacții</span>
+                <span class="accordion-arrow">&#9662;</span>
+            </button>
+            <div id="reactiiPanel" class="accordion-panel" style="display:none;">
+                <ul class="sidebar-list">
+                    <li><a href="/Substitutie">Reacția de substituție</a></li>
+                    <li><a href="/Aditie">Reacția de adiție</a></li>
+                    <li><a href="/Polimerizare">Reacția de polimerizare</a></li>
+                    <li><a href="/Eliminare">Reacția de eliminare</a></li>
+                    <li><a href="/Transpozitie">Reacția de transpoziție</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-header" type="button" aria-expanded="false" aria-controls="compusiPanel" onclick="toggleAccordion('compusiPanel', this)">
+                <span>Compuși</span>
+                <span class="accordion-arrow">&#9662;</span>
+            </button>
+            <div id="compusiPanel" class="accordion-panel" style="display:none;">
+                <ul class="sidebar-list">
+                    <li><a href="/Aminoacizi">Aminoacizi</a></li>
+                    <li><a href="/Proteine">Proteine</a></li>
+                    <li><a href="/Monozaharide">Monozaharide</a></li>
+                    <li><a href="/Dizaharide">Dizaharide</a></li>
+                    <li><a href="/Polizaharide">Polizaharide</a></li>
+                    <li><a href="/Grasimi">Grăsimi</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="main-content text-center">
+    <div class="glass-card">
+        <div class="search-container text-center" style="margin-bottom: 32px;">
+            <input id="quick-search" type="text" class="form-control" placeholder="Caută reacții sau compuși..." autocomplete="off" style="max-width: 400px; margin: 0 auto; border-radius: 24px; padding: 12px 20px; font-size: 1.1rem;" />
+            <ul id="search-results" class="search-results-list" style="display:none;"></ul>
+        </div>        <h1 class="display-4">Bun venit în laboratorul tău virtual de chimie organică!</h1>
+        <p class="lead">Aici vei găsi toate resursele necesare pentru a stăpâni conceptele fundamentale ale chimiei organice.</p>
+        <p class="lead">De la structuri simple la reacții complexe, fiecare lecție este concepută să îți ofere o înțelegere clară și practică. Pregătit să începi? Alege un subiect din meniul din stânga!</p>
+    </div>
+</div>
+<div id="pageLoader" class="page-loader" style="display:none;">
+    <div class="spinner"></div>
+</div>
+<script>    const searchData = [
+        { label: 'Reacția de substituție', url: '/Substitutie' },
+        { label: 'Reacția de adiție', url: '/Aditie' },
+        { label: 'Reacția de polimerizare', url: '/Polimerizare' },
+        { label: 'Reacția de eliminare', url: '/Eliminare' },
+        { label: 'Reacția de transpoziție', url: '/Transpozitie' },
+        { label: 'Aminoacizi', url: '/Aminoacizi' },
+        { label: 'Proteine', url: '/Proteine' },
+        { label: 'Monozaharide', url: '/Monozaharide' },
+        { label: 'Dizaharide', url: '/Dizaharide' },
+        { label: 'Polizaharide', url: '/Polizaharide' },
+        { label: 'Grăsimi', url: '/Grasimi' }
+    ];
+    const searchInput = document.getElementById('quick-search');
+    const resultsList = document.getElementById('search-results');
+    let selectedIdx = -1;
+    function renderResults(results) {
+        resultsList.innerHTML = '';
+        if (!results.length) {
+            resultsList.style.display = 'none';
+            return;
+        }
+        results.forEach((item, idx) => {
+            const li = document.createElement('li');
+            li.textContent = item.label;
+            li.tabIndex = 0;
+            li.className = 'search-result-item';
+            li.removeAttribute('style');
+            li.classList.remove('bg-light', 'bg-white', 'bg-dark', 'text-dark', 'text-light');
+            li.onmouseenter = () => highlight(idx);
+            li.onmouseleave = () => highlight(-1);
+            li.onclick = () => window.location.href = item.url;
+            resultsList.appendChild(li);
+        });
+        resultsList.style.display = 'block';
+    }
+    function highlight(idx) {
+        Array.from(resultsList.children).forEach((li, i) => {
+            li.classList.toggle('active', i === idx);
+        });
+        selectedIdx = idx;
+    }
+    searchInput.addEventListener('input', function() {
+        const val = this.value.trim().toLowerCase();
+        if (!val) {
+            resultsList.style.display = 'none';
+            return;
+        }
+        const filtered = searchData.filter(x => x.label.toLowerCase().includes(val));
+        renderResults(filtered);
+        highlight(-1);
+    });
+    searchInput.addEventListener('keydown', function(e) {
+        const items = Array.from(resultsList.children);
+        if (!items.length) return;
+        if (e.key === 'ArrowDown') {
+            highlight((selectedIdx + 1) % items.length);
+            e.preventDefault();
+        } else if (e.key === 'ArrowUp') {
+            highlight((selectedIdx - 1 + items.length) % items.length);
+            e.preventDefault();
+        } else if (e.key === 'Enter' && selectedIdx >= 0) {
+            items[selectedIdx].click();
+        } else if (e.key === 'Escape') {
+            resultsList.style.display = 'none';
+        }
+    });
+    document.addEventListener('click', function(e) {
+        if (!searchInput.contains(e.target) && !resultsList.contains(e.target)) {
+            resultsList.style.display = 'none';
+        }
+    });
+    function updateSearchTheme() {
+        const isDark = document.documentElement.className === 'theme-dark';
+        document.documentElement.style.setProperty('--search-bg', isDark ? '#232946' : '#fff');
+        document.documentElement.style.setProperty('--search-hover', isDark ? '#eebbc3' : '#f0f0f0');
+    }
+    updateSearchTheme();
+    const themeObs = new MutationObserver(updateSearchTheme);
+    themeObs.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+
+    function toggleAccordion(panelId, btn) {
+        var panel = document.getElementById(panelId);
+        var expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', !expanded);
+        panel.style.display = expanded ? 'none' : 'block';
+        if(panelId === 'reactiiPanel') {
+            document.getElementById('compusiPanel').style.display = 'none';
+            document.querySelector('button[aria-controls="compusiPanel"]').setAttribute('aria-expanded', 'false');
+        } else {
+            document.getElementById('reactiiPanel').style.display = 'none';
+            document.querySelector('button[aria-controls="reactiiPanel"]').setAttribute('aria-expanded', 'false');
+        }
+    }
+    function showLoader() {
+        document.getElementById('pageLoader').style.display = 'flex';
+    }
+    function hideLoader() {
+        document.getElementById('pageLoader').style.display = 'none';
+    }
+    document.querySelectorAll('.theme-toggle-btn, .glass-card').forEach(function(btn) {
+        btn.addEventListener('click', addRippleEffect);
+    });
+    function addRippleEffect(e) {
+        const target = e.currentTarget;
+        const circle = document.createElement('span');
+        circle.className = 'ripple';
+        const rect = target.getBoundingClientRect();
+        const size = Math.max(rect.width, rect.height);
+        circle.style.width = circle.style.height = size + 'px';
+        circle.style.left = (e.clientX - rect.left - size/2) + 'px';
+        circle.style.top = (e.clientY - rect.top - size/2) + 'px';
+        target.appendChild(circle);
+        setTimeout(() => circle.remove(), 500);
+    }
+</script>

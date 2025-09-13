@@ -1,0 +1,143 @@
+@page
+@{
+    ViewData["Title"] = "Reacția de adiție";
+}
+<div class="lesson-header" style="display:flex;align-items:center;gap:16px;margin-bottom:24px;">
+    <span class="lesson-icon" style="font-size:2.2rem;">➕</span>
+    <h1 style="margin:0;">Reacția de adiție</h1>
+</div>
+<div class="lesson-section glass-card" style="margin-bottom:28px;">
+    <h2>Teorie</h2>
+    <p class="mb-4">Reacția de adiție este un tip de reacție chimică în care două molecule se combină pentru a forma un singur produs, fără eliminarea vreunui atom sau grupă de atomi. Are loc de obicei la compuși nesaturați (alchene, alchine), în care legătura dublă sau triplă se rupe și se adaugă atomi sau grupări chimice.</p>
+    
+    <div class="alert alert-info" style="background:#eaf6fb;border-left:4px solid #3a7ca5;padding:12px 18px;margin:18px 0;">
+        <strong>Caracteristici principale:</strong>
+        <ul class="mb-0" style="padding-left:1.2em;">
+            <li>Au loc la compuși nesaturați (legături duble sau triple)</li>
+            <li>Implică ruperea legăturii π și formarea de noi legături sigma</li>
+            <li>Poate respecta reguli de orientare pentru alchene și alchine nesaturate</li>
+        </ul>
+    </div>
+
+    <div class="alert alert-warning" style="background:#fff3cd;border-left:4px solid #ffc107;padding:12px 18px;margin:18px 0;">
+        <strong>Regula lui Markovnikov:</strong>
+        <p class="mb-0">În adiția unui acid halogenhidric la o alchenă, H se leagă la carbonul cu mai mulți atomi de hidrogen, iar halogenul la cel cu mai puțini.</p>
+    </div>
+  <div class="ratio ratio-16x9 mb-4">
+        <iframe src="https://www.youtube.com/embed/HZ_aSuuYb-A?si=NjORyxtmS8H7g41d" title="brom+etn" allowfullscreen></iframe>
+    </div>
+    <h3 class="mt-4">Clasificare</h3>
+    <p>După tipul de compuși implicați:</p>
+    <ul style="padding-left:1.2em;">
+        <li>Adiție la legături C=C (alchene)</li>
+        <li>Adiție la legături C≡C (alchine)</li>
+        <li>Adiție la grupări carbonil (C=O)</li>
+    </ul>
+
+    <h3 class="mt-4">Rol și importanță practică</h3>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card h-100 p-3 mb-3">
+                <h5>În industrie:</h5>
+                <ul>
+                    <li>Hidrogenarea uleiurilor → margarină</li>
+                    <li>Adiția de halogeni/acizi → fabricarea PVC, teflon, solvenți</li>
+                    <li>Adiția de HBr → sinteză de halogenoalchani, materii prime</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card h-100 p-3 mb-3">
+                <h5>În biochimie și farmaceutică:</h5>
+                <ul>
+                    <li>Sinteza glucozei și altor zaharuri (prin adiție la carbonil)</li>
+                    <li>Sintetizarea de molecule complexe (alcooli, aminoacizi, lactone)</li>
+                    <li>Testarea nesaturărilor (cu brom sau permanganat de potasiu)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="mt-4">Proprietăți chimice</h3>
+    <p>Reacția poate fi influențată de:</p>
+    <ul style="padding-left:1.2em;">
+        <li>Catalizatori (Ni, Pt pentru hidrogenare)</li>
+        <li>Temperatură, presiune</li>
+        <li>Prezența peroxizilor (pentru reacții radicalice)</li>
+        <li>Unele reacții sunt reversibile (în special cele nucleofile)</li>
+    </ul>
+
+    <h3 class="mt-4">Exemple de reacții de adiție</h3>
+
+    <div class="card mb-3">
+        <div class="card-header">
+            <h5 class="mb-0">La alchene:</h5>
+        </div>
+        <div class="card-body">
+            <ul class="mb-0">
+                <li>Hidrogenare (cu Ni/Pt):<br>
+                    <code>CH₂=CH₂ + H₂ → CH₃–CH₃</code></li>
+                <li>Adiția de halogeni (Br₂, Cl₂):<br>
+                    <code>CH₂=CH₂ + Br₂ → CH₂Br–CH₂Br</code></li>
+                <li>Adiția de apă (hidratare):<br>
+                    <code>CH₂=CH₂ + H₂O → CH₃CH₂OH</code></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card mb-3">
+        <div class="card-header">
+            <h5 class="mb-0">La alchine:</h5>
+        </div>
+        <div class="card-body">
+            <ul class="mb-0">
+                <li>Hidrogenare completă:<br>
+                    <code>CH≡CH + 2H₂ → CH₃–CH₃</code></li>
+                <li>Adiția de HBr (Markovnikov):<br>
+                    <code>CH≡CH + HBr → CH₂Br–CH₃</code></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card mb-3">
+        <div class="card-header">
+            <h5 class="mb-0">La compuși carbonilici:</h5>
+        </div>
+        <div class="card-body">
+            <ul class="mb-0">
+                <li>Adiția de apă (hidratare):<br>
+                    <code>R–CHO + H₂O → R–CH(OH)₂</code></li>
+                <li>Adiția de HCN (cianhidrină):<br>
+                    <code>R–CHO + HCN → R–CH(OH)–CN</code></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card mb-3">
+        <div class="card-header">
+            <h5 class="mb-0">Alte exemple:</h5>
+        </div>
+        <div class="card-body">
+            <ul class="mb-0">
+                <li>La nitrili:<br>
+                    <code>R-C≡N + 2H₂ → R-CH₂-NH₂</code></li>
+                <li>La arene (hidrogenare catalitică):<br>
+                    <code>C₆H₆ + 3H₂ → C₆H₁₂</code></li>
+                <li>Adiția de HBr la propenă:<br>
+                    <code>CH₃–CH=CH₂ + HBr → CH₃–CHBr–CH₃</code></li>
+                <li>Adiția de H₂O la propenă:<br>
+                    <code>CH₃–CH=CH₂ + H₂O → CH₃–CHOH–CH₃</code></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="lesson-section glass-card" style="margin-bottom:28px;">    <h2>Test interactiv</h2>
+    <div class="embed-responsive embed-responsive-16by9">
+        <iframe src="https://quizizz.com/join/quiz/682b430f14e8058718d824ef/start" width="100%" height="500" frameborder="0" allowfullscreen class="embed-responsive-item"></iframe>
+    </div>
+</div>
+<div class="mt-4">
+    <a href="/Substitutie" class="btn btn-secondary me-2">Înapoi la Reacția de substituție</a>
+    <a href="/Polimerizare" class="btn btn-primary">Treci la Reacția de polimerizare</a>
+</div>
+<script src="/js/feedback.js"></script>

@@ -1,0 +1,56 @@
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\chimie\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\chimie\bin\Debug\net9.0\appsettings.json
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\chimie\bin\Debug\net9.0\chimie.staticwebassets.runtime.json
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\chimie\bin\Debug\net9.0\chimie.staticwebassets.endpoints.json
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\chimie\bin\Debug\net9.0\chimie.exe
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\chimie\bin\Debug\net9.0\chimie.deps.json
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\chimie\bin\Debug\net9.0\chimie.runtimeconfig.json
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\chimie\bin\Debug\net9.0\chimie.dll
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\chimie\bin\Debug\net9.0\chimie.pdb
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\chimie\obj\Debug\net9.0\chimie.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\chimie\obj\Debug\net9.0\chimie.AssemblyInfoInputs.cache
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\chimie\obj\Debug\net9.0\chimie.AssemblyInfo.cs
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\chimie\obj\Debug\net9.0\chimie.csproj.CoreCompileInputs.cache
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\chimie\obj\Debug\net9.0\chimie.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\chimie\obj\Debug\net9.0\chimie.RazorAssemblyInfo.cache
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\chimie\obj\Debug\net9.0\chimie.RazorAssemblyInfo.cs
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\chimie\obj\Debug\net9.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\chimie\obj\Debug\net9.0\scopedcss\bundle\chimie.styles.css
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\chimie\obj\Debug\net9.0\scopedcss\projectbundle\chimie.bundle.scp.css
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\chimie\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\chimie\obj\Debug\net9.0\staticwebassets.build.json.cache
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\chimie\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\chimie\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\chimie\obj\Debug\net9.0\chimie.dll
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\chimie\obj\Debug\net9.0\refint\chimie.dll
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\chimie\obj\Debug\net9.0\chimie.pdb
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\chimie\obj\Debug\net9.0\chimie.genruntimeconfig.cache
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\chimie\obj\Debug\net9.0\ref\chimie.dll
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\31.05 FIIIINIIISH\chimie\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\31.05 FIIIINIIISH\chimie\bin\Debug\net9.0\appsettings.json
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\31.05 FIIIINIIISH\chimie\bin\Debug\net9.0\chimie.staticwebassets.runtime.json
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\31.05 FIIIINIIISH\chimie\bin\Debug\net9.0\chimie.staticwebassets.endpoints.json
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\31.05 FIIIINIIISH\chimie\bin\Debug\net9.0\chimie.exe
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\31.05 FIIIINIIISH\chimie\bin\Debug\net9.0\chimie.deps.json
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\31.05 FIIIINIIISH\chimie\bin\Debug\net9.0\chimie.runtimeconfig.json
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\31.05 FIIIINIIISH\chimie\bin\Debug\net9.0\chimie.dll
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\31.05 FIIIINIIISH\chimie\bin\Debug\net9.0\chimie.pdb
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\31.05 FIIIINIIISH\chimie\obj\Debug\net9.0\chimie.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\31.05 FIIIINIIISH\chimie\obj\Debug\net9.0\chimie.AssemblyInfoInputs.cache
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\31.05 FIIIINIIISH\chimie\obj\Debug\net9.0\chimie.AssemblyInfo.cs
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\31.05 FIIIINIIISH\chimie\obj\Debug\net9.0\chimie.csproj.CoreCompileInputs.cache
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\31.05 FIIIINIIISH\chimie\obj\Debug\net9.0\chimie.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\31.05 FIIIINIIISH\chimie\obj\Debug\net9.0\chimie.RazorAssemblyInfo.cache
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\31.05 FIIIINIIISH\chimie\obj\Debug\net9.0\chimie.RazorAssemblyInfo.cs
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\31.05 FIIIINIIISH\chimie\obj\Debug\net9.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\31.05 FIIIINIIISH\chimie\obj\Debug\net9.0\scopedcss\bundle\chimie.styles.css
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\31.05 FIIIINIIISH\chimie\obj\Debug\net9.0\scopedcss\projectbundle\chimie.bundle.scp.css
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\31.05 FIIIINIIISH\chimie\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\31.05 FIIIINIIISH\chimie\obj\Debug\net9.0\staticwebassets.build.json.cache
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\31.05 FIIIINIIISH\chimie\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\31.05 FIIIINIIISH\chimie\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\31.05 FIIIINIIISH\chimie\obj\Debug\net9.0\chimie.dll
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\31.05 FIIIINIIISH\chimie\obj\Debug\net9.0\refint\chimie.dll
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\31.05 FIIIINIIISH\chimie\obj\Debug\net9.0\chimie.pdb
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\31.05 FIIIINIIISH\chimie\obj\Debug\net9.0\chimie.genruntimeconfig.cache
+C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\31.05 FIIIINIIISH\chimie\obj\Debug\net9.0\ref\chimie.dll

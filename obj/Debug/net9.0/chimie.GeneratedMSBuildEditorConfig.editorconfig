@@ -1,0 +1,93 @@
+is_global = true
+build_property.TargetFramework = net9.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = chimie
+build_property.RootNamespace = chimie
+build_property.ProjectDir = C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\31.05 FIIIINIIISH\chimie\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\alexa\OneDrive\Documents\lucrez\SITE CHIMIE FINAL\31.05 FIIIINIIISH\chimie
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/alexa/OneDrive/Documents/lucrez/SITE CHIMIE FINAL/31.05 FIIIINIIISH/chimie/Pages/Aditie.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRpdGllLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexa/OneDrive/Documents/lucrez/SITE CHIMIE FINAL/31.05 FIIIINIIISH/chimie/Pages/Aminoacizi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQW1pbm9hY2l6aS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexa/OneDrive/Documents/lucrez/SITE CHIMIE FINAL/31.05 FIIIINIIISH/chimie/Pages/Dizaharide.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGl6YWhhcmlkZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexa/OneDrive/Documents/lucrez/SITE CHIMIE FINAL/31.05 FIIIINIIISH/chimie/Pages/Eliminare.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWxpbWluYXJlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexa/OneDrive/Documents/lucrez/SITE CHIMIE FINAL/31.05 FIIIINIIISH/chimie/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexa/OneDrive/Documents/lucrez/SITE CHIMIE FINAL/31.05 FIIIINIIISH/chimie/Pages/Grasimi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR3Jhc2ltaS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexa/OneDrive/Documents/lucrez/SITE CHIMIE FINAL/31.05 FIIIINIIISH/chimie/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexa/OneDrive/Documents/lucrez/SITE CHIMIE FINAL/31.05 FIIIINIIISH/chimie/Pages/Monozaharide.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW9ub3phaGFyaWRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexa/OneDrive/Documents/lucrez/SITE CHIMIE FINAL/31.05 FIIIINIIISH/chimie/Pages/Polimerizare.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9saW1lcml6YXJlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexa/OneDrive/Documents/lucrez/SITE CHIMIE FINAL/31.05 FIIIINIIISH/chimie/Pages/Polizaharide.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9saXphaGFyaWRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexa/OneDrive/Documents/lucrez/SITE CHIMIE FINAL/31.05 FIIIINIIISH/chimie/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexa/OneDrive/Documents/lucrez/SITE CHIMIE FINAL/31.05 FIIIINIIISH/chimie/Pages/Proteine.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvdGVpbmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexa/OneDrive/Documents/lucrez/SITE CHIMIE FINAL/31.05 FIIIINIIISH/chimie/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexa/OneDrive/Documents/lucrez/SITE CHIMIE FINAL/31.05 FIIIINIIISH/chimie/Pages/Substitutie.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3Vic3RpdHV0aWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexa/OneDrive/Documents/lucrez/SITE CHIMIE FINAL/31.05 FIIIINIIISH/chimie/Pages/Transpozitie.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHJhbnNwb3ppdGllLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexa/OneDrive/Documents/lucrez/SITE CHIMIE FINAL/31.05 FIIIINIIISH/chimie/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexa/OneDrive/Documents/lucrez/SITE CHIMIE FINAL/31.05 FIIIINIIISH/chimie/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexa/OneDrive/Documents/lucrez/SITE CHIMIE FINAL/31.05 FIIIINIIISH/chimie/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-09a7i097yh

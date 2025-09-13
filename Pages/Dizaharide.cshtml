@@ -1,0 +1,299 @@
+@page
+@{
+    ViewData["Title"] = "Dizaharide";
+}
+<div class="lesson-header" style="display:flex;align-items:center;gap:16px;margin-bottom:24px;">
+    <span class="lesson-icon" style="font-size:2.2rem;">🍪</span>
+    <h1 style="margin:0;">Dizaharide</h1>
+</div>
+<div class="lesson-section glass-card" style="margin-bottom:28px;">
+    <h2>Teorie</h2>
+    <p class="lead">Dizaharidele sunt carbohidrați (glucide) compuși din două molecule de monozaharide legate între ele printr-o legătură glicozidică. Sunt un tip de zaharuri simple, dar mai complexe decât monozaharidele (cum ar fi glucoza sau fructoza).</p>
+
+    <div class="text-center mb-4">
+        <img src="~/poster dizaharide.jpg" alt="Poster dizaharide" class="img-fluid rounded shadow" style="max-width: 100%; height: auto;">
+    </div>
+
+    <p>Dizaharidele se formează prin eliminarea de apă între doua molecule de monozaharide identice sau diferite:</p>
+    <div class="text-center">
+        <img src="~/dizaharide1.jpg" alt="Formarea dizaharidelor" class="img-fluid mb-4 rounded shadow" style="max-width: 60%; height: auto;">
+    </div>
+
+    <h3 class="mt-4">Clasificare:</h3>
+    <h4 class="text-primary">1. După natura monozaharidelor componente:</h4>
+    <div class="ps-4 border-start border-primary">
+        <p class="mb-2"><strong>● Homodizaharide</strong> – ambele monozaharide sunt identice:</p>
+        <ul class="mb-3">
+            <li>Maltoză (glucoză + glucoză)</li>
+            <li>Izomaltoză (glucoză + glucoză, dar cu legătură diferită)</li>
+            <li>Trehaloză (glucoză + glucoză)</li>
+        </ul>
+
+        <p class="mb-2"><strong>● Heterodizaharide</strong> – monozaharidele sunt diferite:</p>
+        <ul class="mb-3">
+            <li>Lactoză (glucoză + galactoză)</li>
+            <li>Zaharoză (glucoză + fructoză)</li>
+        </ul>
+    </div>
+
+    <h4 class="text-primary mt-4">2. După tipul legăturii glicozidice:</h4>
+    <div class="ps-4 border-start border-primary">
+        <p class="mb-2"><strong>● α (alfa) dizaharide</strong> – legătura este de tip α-glicozidică:</p>
+        <ul class="mb-3">
+            <li>Maltoză (α-1,4)</li>
+            <li>Izomaltoză (α-1,6)</li>
+            <li>Trehaloză (α-1,1)</li>
+        </ul>
+
+        <p class="mb-2"><strong>● β (beta) dizaharide</strong> – legătura este de tip β-glicozidică:</p>
+        <ul class="mb-3">
+            <li>Lactoză (β-1,4)</li>
+            <li>Celobioză (β-1,4, glucoză + glucoză)</li>
+        </ul>
+    </div>
+
+    <h4 class="text-primary mt-4">3. După caracterul reducător:</h4>
+    <div class="ps-4 border-start border-primary">
+        <p class="mb-2"><strong>● Reducătoare</strong> – au o grupare hidroxil hemicetalică liberă (pot reduce reactivi precum Benedict sau Fehling):</p>
+        <ul class="mb-3">
+            <li>Maltoză</li>
+            <li>Lactoză</li>
+            <li>Celobioză</li>
+        </ul>
+
+        <p class="mb-2"><strong>● Nereducătoare</strong> – nu au grupare hidroxil liberă:</p>
+        <ul class="mb-3">
+            <li>Zaharoză</li>
+            <li>Trehaloză</li>
+        </ul>
+    </div>
+
+    <div class="alert alert-info mt-4">
+        <h5>Dizaharide reducătoare</h5>
+        <ul class="mb-0">
+            <li><strong>Caracteristică:</strong> Participă la reacția de condensare cu gruparea –OH a carbonului anomeric al unei singure monozaharide. Cealaltă monozaharidă își păstrează gruparea aldehidică/cetonică liberă.</li>
+            <li><strong>Consecință:</strong> Au caracter reductiv, adică pot reduce reactivi (ex. reactivul Tollens sau Benedict).</li>
+            <li><strong>Exemple:</strong>
+                <ul>
+                    <li>Maltoză = glucoză + glucoză (legătură α(1→4))</li>
+                    <li>Lactoză = galactoză + glucoză (legătură β(1→4))</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <h4 class="text-primary mt-4">Dizaharidele cu legătură monocarbonilică:</h4>
+    <div class="ps-4 border-start border-primary">
+        <p class="mb-2">Caracteristici:</p>
+        <ul class="mb-3">
+            <li>au un hidroxil glicozidic liber și astfel pot să treacă în forma carbonilică, dând reacțiile specifice acesteia</li>
+            <li>astfel de dizaharide există sunt forma a 2 anomeri α și β și prezintă mutarotație</li>
+            <li>se oxidează și reduc reactivii Tollens și Fehling</li>
+            <li>sunt dizaharide reducătoare</li>
+        </ul>
+        <p>Maltoza este un exemplu de dizaharid reducător. La fel și β-celobioza.</p>
+    </div>
+      <div class="text-center">
+        <img src="~/dizaharide2.jpg" alt="Structura dizaharidelor reducătoare" class="img-fluid mb-4 rounded shadow" style="max-width: 60%; height: auto;">
+    </div>
+
+    <h4 class="text-primary mt-4">Dizaharidele cu legătură dicarbonilică:</h4>
+    <div class="ps-4 border-start border-primary">
+        <p class="mb-2">Caracteristici:</p>
+        <ul class="mb-3">
+            <li>nu au hidroxilul glicozidic liber și astfel nu pot trece în forma carbonilică</li>
+            <li>nu pot da reacțiile specifice: fenomenul de mutarotație, reducerea soluțiilor Tollens și Fehling</li>
+            <li>sunt dizaharide nereducătoare</li>
+        </ul>
+        <p>Zaharoza este un exemplu de dizaharid nereducător.</p>
+        <p>Trehaloza (alcătuită din 2 molecule de α-D-glucopiranoză) este un exemplu de dizaharid nereducător care se întâlnește în ciuperci, drojdii și în unele plante superioare.</p>    </div>
+    
+    <div class="text-center">
+        <img src="~/dizaharide3.jpg" alt="Structura dizaharidelor nereducătoare" class="img-fluid mb-4 rounded shadow" style="max-width: 60%; height: auto;">
+    </div>
+
+    <div class="text-center">
+        <img src="~/dizaharide4.jpg" alt="Formarea moleculei de zaharoză" class="img-fluid mb-4 rounded shadow" style="max-width: 60%; height: auto;">
+    </div>
+    <p class="mb-4">●Formarea moleculei de zaharoză prin unirea unității de β-D-fructofuranoză și α-D-glucopiranoză, în pozițiile 1,2. Acestea sunt unite printr-o legătură dicarbonilică α-glicozidică din parte glucozei și β-glicozidică din partea fructozei.</p>
+
+    <h4 class="text-primary mt-4">Maltoza</h4>
+    <div class="ps-4 border-start border-primary">
+        <p>Maltoza prezintă următoarele caracteristici:</p>
+        <ul class="mb-4">
+            <li>se întâlnește în natură în cantități mici în aproape toate plantele</li>
+            <li>în cantități mari se află în cerealele germinate – orz încolțit</li>
+            <li>se mai numește și zahăr de malț, denumire de la extractul apos al orzului încolțit, denumit malț</li>
+            <li>în industrie, se obține prin hidroliza enzimatică a amidonului</li>
+            <li>este un intermediar în fabricarea berii și a alcoolului etilic</li>
+            <li>este hidrolizată de maltaza din drojdia de bere (este o α-glicozidază)</li>
+        </ul>
+    </div>
+
+    <h4 class="text-primary mt-4">Zaharoza</h4>
+    <div class="ps-4 border-start border-primary">
+        <p>Zaharoza prezintă următoarele caracteristici:</p>
+        <ul class="mb-4">
+            <li>formula ei moleculară: C12H22O11</li>
+            <li>este dizaharidul cel mai răspândit în natură</li>
+            <li>se folosește aproape exclusiv în alimentație</li>
+            <li>se întâlnește în trestia de zahăr – 14-20%; sfecla de zahăr – 16-20%</li>
+            <li>din plantele enumerate mai sus se extrage industrial</li>
+            <li>este materie primă pentru produsele zaharoase: bomboane, ciocolată și altele</li>
+            <li>se întâlnește în: morcovi, pepeni galbeni, zmeură, piersici, caise, și multe altele</li>
+            <li>uzual, este denumită zahăr</li>
+            <li>zahărul solid extras din trestia de zahăr este cunoscut indienilor cu 3000 de ani î. Hr.</li>
+            <li>în 1747, chimistul german Margraff a obținut zahărul din sfecla de zahăr</li>
+            <li>este utilizat în alimentație și în industria alimentară</li>
+            <li>prezintă un important aport energetic: 1 g zahăr eliberează prin oxidare biochimică (asimilare) 3,7 - 4,2 kcal sau 17,55 kJ</li>
+            <li>prin hidroliza acidă sau enzimatică a zaharozei se obține un amestec echimolecular de D-glucoză și D-fructoză</li>
+            <li>zaharoza este dextrogiră: [α]D=+66,5°</li>
+            <li>prin hidroliză, soluția este alcătuită din D-glucoză slab dextrogiră și D-fructoză puternic levogiră, deci soluția rezultată este levogiră ([α]D= –22°)</li>
+            <li>din acest motiv, amestecul de glucoză și fructoză obținut prin hidroliza zahărului, poartă numele de zahăr invertit și reprezintă mierea artificială</li>
+            <li>zaharoza poate fi hidrolizată de maltază (α-glicozidază) și de invertază (β-glicozidază, enzimă specifică ce va acționa asupra legăturii β-glicozidice din β-D-fructofuranoză)</li>
+        </ul>
+
+        <div class="alert alert-secondary">
+            <p class="mb-0">C12H22O11 + H2O = C6H12O6 + C6H12O6</p>
+        </div>
+
+        <h5 class="mt-4">Proprietățile fizice ale zaharozei:</h5>
+        <ul class="mb-4">
+            <li>este substanță solidă, cristalizată, incoloră</li>
+            <li>este solubilă în apă</li>
+            <li>este greu solubilă în alcool</li>
+            <li>prezintă gust dulce</li>
+            <li>punctul de topire: 185°C</li>
+        </ul>
+    </div>
+
+    <div class="alert alert-info mt-4">
+        <h5>ACTIVITATE EXPERIMENTALĂ</h5>
+        <p class="mt-3"><strong>Mod de lucru:</strong></p>
+        <ol>
+            <li>Într-o capsulă se introduc aproximativ 5 g de zahăr și se încălzește capsula în flacără.</li>
+            <li>Într-un pahar Berzelius se introduc aproximativ 3 g de zahăr. Se toarnă cu atenție acid sulfuric (H2SO4) concentrat peste zahărul din pahar.</li>
+        </ol>
+        <p class="mt-3"><strong>Observații:</strong></p>
+        <ol>
+            <li>Prin încălzire, zahărul s-a topit mai întâi și apoi s-a colorat în brun (s-a caramelizat). Prin încălzire ușoară, zaharoza se topește. Prin răcirea zaharozei topite, aceasta se transformă într-o masă amorfă, care prin încălzire la peste 185°C, capătă o culoare brună, se caramelizează și apoi se carbonizează (devine neagră).</li>
+            <li>Prin tratarea zahărului cu H2SO4 concentrat, zahărul suferă același proces de carbonizare. Acidul sulfuric este higroscopic: scoate apa din structura polihidroxilică a zaharozei, rămânând astfel doar carbonul (cărbune poros).</li>
+        </ol>
+    </div>
+
+    <h4 class="text-primary mt-4">Lactoza</h4>
+    <div class="ps-4 border-start border-primary">
+        <p>Lactoza prezintă următoarele caracteristici:</p>
+        <ul class="mb-4">
+            <li>este o dizaharidă cu legătură monocarbonilică</li>
+            <li>legătura β-glicozidică este din partea galactozei</li>
+            <li>se întâlnește în lapte în proporție de aproximativ 5%</li>
+            <li>se formează în glanda mamară</li>
+            <li>prin hidroliză rezultă D-glucoză și D-galactoză</li>
+        </ul>
+    </div>    <div class="text-center">
+        <img src="~/dizaharide5.jpg" alt="Structura lactozei" class="img-fluid mb-4 rounded shadow" style="max-width: 60%; height: auto;">
+    </div>
+    <p class="mb-4">●Lactoza = β-D-galactopiranoză + β-D-glucopiranoză (unite în pozițiile 1,4).</p>
+    
+    <div class="text-center">
+        <img src="~/dizaharide6.jpg" alt="Alte structuri importante" class="img-fluid mb-4 rounded shadow" style="max-width: 60%; height: auto;">
+    </div>
+
+    <h3 class="mt-4">Cele mai importante dizaharide:</h3>
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th>Dizaharid</th>
+                    <th>Monozaharide componente</th>
+                    <th>Tip legătură</th>
+                    <th>Tip compus (Homo/Hetero)</th>
+                    <th>Reducător / Nereducător</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Maltoză</td>
+                    <td>Glucoză + Glucoză</td>
+                    <td>α(1→4)</td>
+                    <td>Homodizaharid</td>
+                    <td>Reducător</td>
+                </tr>
+                <tr>
+                    <td>Izomaltoza</td>
+                    <td>Glucoză + Glucoză</td>
+                    <td>α(1→6)</td>
+                    <td>Homodizaharid</td>
+                    <td>Reducător</td>
+                </tr>
+                <tr>
+                    <td>Trehaloză</td>
+                    <td>Glucoză + Glucoză</td>
+                    <td>α(1→1)</td>
+                    <td>Homodizaharid</td>
+                    <td>Nereducător</td>
+                </tr>
+                <tr>
+                    <td>Celobioză</td>
+                    <td>Glucoză + Glucoză</td>
+                    <td>β(1→4)</td>
+                    <td>Homodizaharid</td>
+                    <td>Reducător</td>
+                </tr>
+                <tr>
+                    <td>Lactoză</td>
+                    <td>Galactoză + Glucoză</td>
+                    <td>β(1→4)</td>
+                    <td>Heterodizaharid</td>
+                    <td>Reducător</td>
+                </tr>
+                <tr>
+                    <td>Zaharoză</td>
+                    <td>Glucoză + Fructoză</td>
+                    <td>α(1→2)β</td>
+                    <td>Heterodizaharid</td>
+                    <td>Nereducător</td>
+                </tr>            </tbody>
+        </table>
+    </div>
+</div>
+<div class="lesson-section glass-card" style="margin-bottom:28px;">
+    <h2>Testează-te rapid!</h2>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfhD1yHZr37-NGrMJHReVu3Bw_YG4XVOy_DzctfxMBMfpjs9g/viewform?embedded=true" width="100%" height="420" frameborder="0" marginheight="0" marginwidth="0">Se încarcă…</iframe>    <div class="mt-3"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfhD1yHZr37-NGrMJHReVu3Bw_YG4XVOy_DzctfxMBMfpjs9g/viewform" target="_blank" class="btn btn-primary">Deschide testul pe Google</a></div>
+</div>
+
+
+<div class="lesson-section glass-card" style="margin-bottom:28px;">
+    <h2>Experiment video</h2>
+    <div class="ratio ratio-16x9 mb-3">
+        <iframe src="https://www.youtube.com/embed/7Iz3OiWXMgc" title="Experiment dizaharide" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
+<div class="lesson-section glass-card" style="margin-bottom:28px;">
+    <h2>Probleme</h2>
+    <div class="problem-card" style="margin-bottom:16px;">
+        <strong>Problema 1:</strong>
+        <p>Ce masă de zaharoză este necesară pentru a obține 18 g de glucoză prin hidroliză completă?</p>
+    </div>
+    
+    <div class="problem-card" style="margin-bottom:16px;">
+        <strong>Problema 2:</strong>
+        <p>Se dizolvă 17,1 g de zaharoză într-un volum de 500 mL apă. Care este concentrația molară a soluției?</p>
+    </div>
+    
+    <div class="problem-card">
+        <strong>Problema 3:</strong>
+        <p>Ce procent din masa zaharozei este reprezentat de glucoză?</p>
+    </div>
+</div>
+<div class="lesson-section glass-card" style="margin-bottom:28px;">
+    <h2>Jocuri interactive</h2>
+    <iframe src="https://wordwall.net/embed/3cf87aa0e6be4a78ba4a85321aa514cd?themeId=1&templateId=3&fontStackId=0" width="100%" height="380" frameborder="0" allowfullscreen></iframe>
+</div>
+<div class="mt-4">
+    <a href="/Monozaharide" class="btn btn-secondary me-2">Înapoi la Monozaharide</a>
+    <a href="/Polizaharide" class="btn btn-primary">Treci la Polizaharide</a>
+</div>
+<script src="/js/feedback.js"></script>

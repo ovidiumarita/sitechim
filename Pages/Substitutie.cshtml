@@ -1,0 +1,317 @@
+@page
+@{
+    ViewData["Title"] = "Reacția de substituție";
+}
+
+<style>
+    .chemistry-card {
+        background: rgba(255,255,255,0.8);
+        border-radius: 16px;
+        padding: 24px;
+        margin-bottom: 24px;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    }
+    
+    .reaction-schema {
+        background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(238,187,195,0.1));
+        border-radius: 16px;
+        padding: 24px;
+        margin: 24px 0;
+        text-align: center;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        border: 1px solid rgba(59,95,255,0.1);
+    }
+
+    .reaction-equation {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.25rem;
+        margin: 16px 0;
+        color: #3b5fff;
+        letter-spacing: 0.5px;
+        font-weight: 500;
+    }
+
+    .reaction-legend {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 12px;
+        margin-top: 16px;
+        text-align: left;
+        font-size: 0.95rem;
+        color: #232946;
+        background: rgba(255,255,255,0.7);
+        padding: 16px;
+        border-radius: 12px;
+        border: 1px solid rgba(59,95,255,0.15);
+    }
+
+    .reaction-legend-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .reaction-legend-item::before {
+        content: "•";
+        color: #3b5fff;
+        font-weight: bold;
+    }
+      .reaction-image {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        border-radius: 12px;
+        margin: 24px auto;
+        box-shadow: 0 4px 18px rgba(44,62,80,0.10);
+        display: block;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    
+    .reaction-image:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 24px rgba(44,62,80,0.15);
+    }
+    
+    .theme-dark .chemistry-card {
+        background: rgba(35,41,70,0.95);
+    }
+      .theme-dark .reaction-schema {
+        background: rgba(35,41,70,0.95);
+        border-color: rgba(238,187,195,0.10);
+    }
+
+    .theme-dark .reaction-equation {
+        color: #eebbc3;
+    }
+
+    .theme-dark .reaction-legend {
+        background: rgba(35,41,70,0.5);
+        color: #eebbc3;
+        border-color: rgba(238,187,195,0.15);
+    }
+
+    .theme-dark .reaction-legend-item::before {
+        color: #eebbc3;
+    }
+
+    .section-title {
+        color: #3b5fff;
+        margin-bottom: 16px;
+        padding-bottom: 8px;
+        border-bottom: 2px solid #3b5fff;
+    }
+
+    .theme-dark .section-title {
+        color: #eebbc3;
+        border-bottom-color: #eebbc3;
+    }
+
+    .important-note {
+        background: rgba(59,95,255,0.1);
+        border-left: 4px solid #3b5fff;
+        padding: 16px;
+        margin: 16px 0;
+        border-radius: 0 8px 8px 0;
+    }
+
+    .theme-dark .important-note {
+        background: rgba(238,187,195,0.1);
+        border-left-color: #eebbc3;
+    }
+</style>
+
+<div class="lesson-header" style="display:flex;align-items:center;gap:16px;margin-bottom:24px;">
+    <span class="lesson-icon" style="font-size:2.2rem;">🧪</span>
+    <h1 style="margin:0;">Reacția de substituție</h1>
+</div>
+
+<div class="lesson-section glass-card">
+    <h2>Teorie</h2>
+    <h3>Concepte fundamentale</h3>
+    <p class="lead">Reacția de substituție este un tip de reacție chimică în care un atom sau o grupă funcțională dintr-o moleculă este înlocuit(ă) de un alt atom sau de o altă grupă funcțională.</p>
+    
+    <div class="important-note">
+        <p>Reacția de substituție apare la:</p>
+        <ul>
+            <li>Hidrocarburi (alcani, alchene, alchine și arene)</li>
+            <li>Este specifică hidrocarburilor saturate (alcani)</li>
+            <li>Alte clase de compuși organici (ex: hidroliza compușilor halogenați)</li>
+        </ul>
+    </div> 
+    <h3>Substituția la Alcani</h3>
+    <h3>Reacția de Halogenare</h3>
+      <div class="reaction-schema">
+        <h4>Formula generală</h4>
+        <p class="reaction-equation">CnH2n+2 + X2 → CnH2n+1X + HX</p>
+        <div class="reaction-legend">
+            <div class="reaction-legend-item">CnH2n+2 = alcan</div>
+            <div class="reaction-legend-item">X2 = halogen (Clor, Brom)</div>
+            <div class="reaction-legend-item">CnH2n+1X = compus halogenat</div>
+            <div class="reaction-legend-item">HX = hidracid (HCl, HBr)</div>
+        </div>
+    </div>
+
+    <div class="important-note">
+        <strong>Condiții de reacție:</strong>
+        <ul>
+            <li>În prezența luminii sau</li>
+            <li>La întuneric și temperaturi ridicate (300° – 600°C)</li>
+        </ul>
+    </div>
+
+    <h4>Exemplu: Clorurarea metanului</h4>
+    <div class="reaction-schema">
+        <p>CH4 + Cl2 → CH3Cl + HCl</p>
+        <p><small>(monoclorometan)</small></p>
+        <p>CH3Cl + Cl2 → CH2Cl2 + HCl</p>
+        <p><small>(diclorometan)</small></p>
+        <p>CH2Cl2 + Cl2 → CHCl3 + HCl</p>
+        <p><small>(triclorometan)</small></p>
+        <p>CHCl3 + Cl2 → CCl4 + HCl</p>
+        <p><small>(tetraclorometan)</small></p>
+    </div>
+    <h3>Substituția la Alchene</h3>
+    <h3>Halogenarea în poziția alilică</h3>
+    
+    <div class="important-note">
+        <p>Atomii de hidrogen aflați în poziția alilică (lângă dubla legătură) sunt mai reactivi decât ceilalți atomi de hidrogen.</p>
+    </div>
+
+    <div class="reaction-schema">
+        <p>CH2 = CH – CH3 + Cl2 → CH2 = CH – CH2Cl + HCl</p>
+        <p><small>(clorură de alil)</small></p>
+    </div>
+
+    <p><strong>Importanță industrială:</strong> Această reacție este utilizată în industrie pentru obținerea clorurii de alil, un compus intermediar important în sinteza glicerinei.</p>
+    <h3>Substituția la Alchine</h3>
+    
+    <div class="important-note">
+        <p>Alchinele cu tripla legătură la capătul lanțului prezintă un caracter slab acid.</p>
+    </div>
+
+    <h3>Reacția cu metale alcaline</h3>
+    <div class="reaction-schema">
+        <p><strong>Schema generală:</strong></p>
+        <p>-C≡CH + Na → -C≡CNa + ½ H2</p>
+        <p><strong>Exemplu:</strong></p>
+        <p>HC≡CH + Na → NaC≡CH + ½ H2 (150°C)</p>
+        <p><small>(acetilenă → acetilură monosodică)</small></p>
+        <p>NaC≡CH + Na → NaC≡CNa + ½ H2 (220°C)</p>
+        <p><small>(acetilură disodică)</small></p>
+    </div>
+    <h3>Substituția la Arene</h3>
+    
+    <div class="important-note">
+        <p>Arenele participă la două tipuri de substituție:</p>
+        <ul>
+            <li>La nucleu: halogenare, alchilare (Friedel-Crafts), nitrare, sulfonare</li>
+            <li>La catena laterală: halogenare</li>
+        </ul>
+    </div>
+
+    <h3>Halogenarea la Nucleu</h3>
+    <div class="reaction-schema">
+        <p><strong>Schema generală:</strong></p>
+        <p>Ar-H + X2 → Ar-X + HX</p>
+        <p><small>unde:</small></p>
+        <ul style="list-style:none;padding:0;">
+            <li>Ar-X = derivat halogenat aromatic</li>
+            <li>X2 = Clor sau Brom</li>
+            <li>Ar-H = arena</li>
+            <li>HX = hidracid</li>
+        </ul>
+    </div>
+
+    <h4>Exemple:</h4>
+    <div style="text-align:center;">
+        <p><strong>a) Clorurarea benzenului:</strong></p>
+        <img src="/imgsubst1.jpg" alt="Clorurarea benzenului" class="reaction-image">
+        
+        <p><strong>b) Clorurarea toluenului:</strong></p>
+        <img src="/imgsubst2.jpg" alt="Clorurarea toluenului" class="reaction-image">
+        
+        <p><strong>c) Bromurarea naftalinei:</strong></p>
+        <img src="/imgsubst3.jpg" alt="Bromurarea naftalinei" class="reaction-image">
+    </div>
+    <h3>Alchilarea Arenelor (Reacția Friedel-Crafts)</h3>
+    
+    <div class="important-note">
+        <p>Implică reacția unei arene (Ar–H) cu un derivat halogenat (R–X), în prezența AlCl₃.</p>
+    </div>
+
+    <div class="reaction-schema">
+        <p><strong>Schema generală:</strong></p>
+        <p>Ar-H + R-X → Ar-R + HX</p>
+        <p><small>unde:</small></p>
+        <ul style="list-style:none;padding:0;">
+            <li>Ar–H = arenă</li>
+            <li>R = radical alchil</li>
+            <li>X = halogen (Cl, Br, I)</li>
+        </ul>
+    </div>
+
+    <div style="text-align:center;">
+        <p><strong>Exemplu:</strong></p>
+        <p>C6H6 + CH3Cl → C6H5–CH3 + HCl</p>
+        <img src="/imgsubst4.jpg" alt="Alchilarea Friedel-Crafts" class="reaction-image">
+    </div>
+    <h3>Nitrarea și Sulfonarea Arenelor</h3>
+
+    <h4>Nitrarea</h4>
+    <div class="reaction-schema">
+        <p>Ar-H + HNO3 → Ar-NO2 + H2O</p>
+        <p><small>(Ar-NO2 = nitroderivat)</small></p>
+    </div>
+    <img src="/imgsubst5.jpg" alt="Nitrarea arenelor" class="reaction-image">
+
+    <h3>Sulfonarea</h3>
+    <div class="reaction-schema">
+        <p>Ar-H + H2SO4 → Ar-SO3H + H2O</p>
+        <p><small>(Ar-SO3H = acid arilsulfonic)</small></p>
+    </div>
+    <div style="text-align:center;">
+        <p><strong>Sulfonarea benzenului:</strong></p>
+        <img src="/imgsubst6.jpg" alt="Sulfonarea benzenului 1" class="reaction-image">
+        <img src="/imgsubst7.jpg" alt="Sulfonarea benzenului 2" class="reaction-image">
+    </div>
+    <h3>Halogenarea la Catena Laterală</h3>
+    
+    <div class="reaction-schema">
+        <p><strong>Schema generală:</strong></p>
+        <p>Ar-CH2-R + X-X → Ar-CHX-R + HX</p>
+    </div>
+
+    <div style="text-align:center;">
+        <img src="/imgsubst8.jpg" alt="Halogenarea la catena laterală" class="reaction-image">
+    </div>
+</div>
+
+<div class="lesson-section glass-card">
+    <h2>Testează-te rapid!</h2>    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdYqkKZxm16PcHXa1ono5LsAxdPTUlGDemYPRCkVgk9dNggpA/viewform?embedded=true" width="100%" height="420" frameborder="0" marginheight="0" marginwidth="0">Se încarcă...</iframe>
+    <div class="mt-3">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdYqkKZxm16PcHXa1ono5LsAxdPTUlGDemYPRCkVgk9dNggpA/viewform" target="_blank" class="btn btn-primary">Deschide testul pe Google</a>
+    </div>
+</div>
+
+<div class="lesson-section glass-card">    <h2>Probleme</h2>
+    <div class="problem-card" style="margin-bottom:12px;">
+        <strong>Problema 1:</strong>
+        <img src="/imgsubstprob1.jpg" alt="Problema 1 de substitutie" class="reaction-image">
+    </div>
+    <div class="problem-card">
+        <strong>Problema 2:</strong>
+        <img src="/imgsubstprob2.jpg" alt="Problema 2 de substitutie" class="reaction-image">
+    </div>
+</div>
+
+<div class="lesson-section glass-card">
+    <h2>Jocuri interactive</h2>
+    <iframe src="https://wordwall.net/embed/dcffe5af58544f0199bed9e856281688?themeId=1&templateId=3&fontStackId=0" width="100%" height="380" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<div class="mt-4">
+    <a href="/" class="btn btn-secondary me-2">Înapoi la Acasă</a>
+    <a href="/Aditie" class="btn btn-primary">Treci la Reacția de adiție</a>
+</div>
+
+<script src="/js/feedback.js"></script>

@@ -1,0 +1,380 @@
+@page
+@{
+    ViewData["Title"] = "Aminoacizi";
+}
+<div class="lesson-header" style="display:flex;align-items:center;gap:16px;margin-bottom:24px;">
+    <span class="lesson-icon" style="font-size:2.2rem;">🧬</span>
+    <h1 style="margin:0;">Aminoacizi</h1>
+</div>
+
+<div class="lesson-section glass-card" style="margin-bottom:28px;">
+    <h2>Introducere</h2>
+    <p>Aminoacizii sunt compuși organici cu funcții mixte (polifuncționali) care conțin în molecula lor grupa carboxil, –COOH cu caracter acid și grupa amino, –NH2 cu caracter bazic, ambele legate de un radical hidrocarbonat.</p>
+    
+    <p>Corpul uman isi poate sintetiza singur anumiti aminoacizi, dar are nevoie si de alti aminoacizi esentiali pe care ii preia din hrana, respectiv din proteine vegetale sau animale.</p>
+    
+    <div class="alert alert-info" style="background:#eaf6fb;border-left:4px solid #3a7ca5;padding:12px 18px;margin:18px 0 14px 0;">
+        <strong>Aminoacizii esențiali sunt:</strong>
+        <p style="margin-bottom:0;">valină; leucină; izoleucină; fenilalanină; treonină; metionină; lisină; triptofan.</p>
+    </div>
+
+    <h3>Formula generală a aminoacizilor:</h3>
+    <div style="text-align:center;margin:24px 0;">
+        <img src="/imgamino1.jpg" alt="Formula generală a aminoacizilor" style="max-width:420px;width:100%;height:auto;border-radius:16px;box-shadow:0 4px 18px rgba(44,62,80,0.10);margin-bottom:10px;" />
+    </div>
+
+    <p>Datorită grupelor carboxil, –COOH și amino, –NH2 care se neutralizează reciproc, aminoacidul apare ca amfion (H3N+–CH(R)–COO-). Amfionii sunt ioni care conțin ambele tipuri de sarcini electrice.</p>
+    
+    <div style="text-align:center;margin:24px 0;">
+        <img src="/imgamino2.jpg" alt="Structura amfionului" style="max-width:420px;width:100%;height:auto;border-radius:16px;box-shadow:0 4px 18px rgba(44,62,80,0.10);margin-bottom:10px;" />
+    </div>
+
+    <p>În molecula unui aminoacid, poziția vecină grupei carboxil se numește poziția α. Astfel că în funcție de poziția ocupată de grupa amino raportat la grupa carboxil, se întâlnesc α, β, γ, δ, ε aminoacizi.</p>
+    
+    <div style="text-align:center;margin:24px 0;">
+        <img src="/imgamino3.jpg" alt="Poziții în molecula aminoacidului" style="max-width:420px;width:100%;height:auto;border-radius:16px;box-shadow:0 4px 18px rgba(44,62,80,0.10);margin-bottom:10px;" />
+    </div>
+
+    <h3>Denumirea aminoacizilor:</h3>
+    <p>Aminoacizii conțin două grupe funcționale: amino și carboxil, dintre care grupa carboxil are prioritate în denumire. Astfel, numele unui aminoacid se formează prin adăugarea prefixului „amino" la numele acidului corespunzător, indicând și poziția grupei amino dacă molecula are mai mult de 3 atomi de carbon.</p>
+    
+    <div class="alert alert-secondary" style="background:#f7e6b3;border-left:4px solid #f7b267;padding:12px 18px;margin:18px 0 14px 0;">
+        <strong>Există două moduri de numerotare:</strong>
+        <ol style="margin-bottom:0;">
+            <li>Numărarea atomilor de carbon începând cu cel din grupa carboxil.</li>
+            <li>Notarea cu litere grecești (α, β, γ etc.), pornind de la carbonul vecin grupei carboxil.</li>
+        </ol>
+    </div>
+
+    <div class="table-responsive">
+        <table class="chemistry-table" style="background:rgba(255,255,255,0.7);border-radius:16px;overflow:hidden;box-shadow:0 4px 18px rgba(44,62,80,0.10);">
+            <thead>
+                <tr>
+                    <th style="background:rgba(59,95,255,0.1);padding:12px;border:1px solid rgba(0,0,0,0.1);">Tipul aminoacizilor</th>
+                    <th style="background:rgba(59,95,255,0.1);padding:12px;border:1px solid rgba(0,0,0,0.1);">Denumire IUPAC</th>
+                    <th style="background:rgba(59,95,255,0.1);padding:12px;border:1px solid rgba(0,0,0,0.1);">Denumire uzuală</th>
+                    <th style="background:rgba(59,95,255,0.1);padding:12px;border:1px solid rgba(0,0,0,0.1);">Formula plană</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);">acizi monoaminocarboxilici</td>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);">acid aminoacetic</td>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);">glicocol sau glicină</td>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);text-align:center;"><img src="/imgamino4.jpg" alt="Formula glicină" style="max-height:60px;" /></td>
+                </tr>
+                <tr>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);">acizi monoaminocarboxilici</td>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);">acid-2-aminopropanoic</td>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);">alanină</td>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);text-align:center;"><img src="/imgamino5.jpg" alt="Formula alanină" style="max-height:60px;" /></td>
+                </tr>
+                <tr>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);">acizi monoaminocarboxilici</td>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);">acid-3-aminopropanoic</td>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);">β-alanină</td>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);text-align:center;"><img src="/imgamino6.jpg" alt="Formula β-alanină" style="max-height:60px;" /></td>
+                </tr>
+                <tr>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);">acizi monoaminocarboxilici</td>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);">acid-2-amino-3-metilbutanoic</td>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);">valină</td>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);text-align:center;"><img src="/imgamino7.jpg" alt="Formula valină" style="max-height:60px;" /></td>
+                </tr>
+                <tr>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);">acizi monoaminocarboxilici</td>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);">acid 2-amino-4-metil-pentanoic</td>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);">leucină</td>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);text-align:center;"><img src="/imgamino8.jpg" alt="Formula leucină" style="max-height:60px;" /></td>
+                </tr>
+                <tr>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);">acizi monoaminocarboxilici</td>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);">acid 2-amino-3-metil-pentanoic</td>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);">izoleucină</td>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);text-align:center;"><img src="/imgamino9.jpg" alt="Formula izoleucină" style="max-height:60px;" /></td>
+                </tr>
+                <tr>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);">acizi diaminomonocarboxilici</td>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);">acid-2,6-diaminohexanoic (acid α, ε-diaminocaproic)</td>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);">lisină</td>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);text-align:center;"><img src="/imgamino12.jpg" alt="Formula lisină" style="max-height:60px;" /></td>
+                </tr>
+                <tr>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);">hidroxiaminoacizi</td>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);">acid 2-amino-3-hidroxipropanoic</td>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);">serină</td>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);text-align:center;"><img src="/imgamino13.jpg" alt="Formula serină" style="max-height:60px;" /></td>
+                </tr>
+                <tr>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);">hidroxiaminoacizi</td>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);">acid 2-amino-3-hidroxibutanoic</td>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);">treonină</td>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);text-align:center;"><img src="/imgamino14.jpg" alt="Formula treonină" style="max-height:60px;" /></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2>Izomeria aminoacizilor</h2>
+    <p>Aminoacizii pot să prezinte izomerie:</p>
+    <ul style="margin-left:1.2em;">
+        <li>de catenă (se ramifică catena);</li>
+        <li>de poziție (diferă poziția unei grupe funcționale);</li>
+        <li>Enantiomerie.</li>
+    </ul>
+
+    <div class="alert alert-info" style="background:#eaf6fb;border-left:4px solid #3a7ca5;padding:12px 18px;margin:18px 0 14px 0;">
+        <p>α-Aminoacizii naturali sunt, în general, optici activi, având cel puțin un atom de carbon asimetric, cu excepția gicinei, care nu are un astfel de atom. Majoritatea au configurația S la carbonul α. În proiecțiile standard, grupa amino este plasată în stânga, iar atomul de hidrogen în dreapta, ceea ce îi încadrează în seria L; enantiomerii lor aparțin seriei D.</p>
+        <p style="margin-bottom:0;">Notarea D/L nu are legătură cu sensul de rotație al luminii polarizate (dextrogir/levogir). De exemplu, cisteina (L) este levogiră, iar alanina (L) este dextrogiră.</p>
+    </div>
+
+    <div style="text-align:center;margin:24px 0;">
+        <img src="/imgamino15.jpg" alt="Izomeria aminoacizilor" style="max-width:420px;width:100%;height:auto;border-radius:16px;box-shadow:0 4px 18px rgba(44,62,80,0.10);margin-bottom:10px;" />
+    </div>
+
+    <h2>Proprietăți fizice</h2>
+    <p>Proprietățile fizice ale aminoacizilor sunt:</p>
+    <ul style="margin-left:1.2em;">
+        <li>sunt substanțe cristaline care se topesc la temperaturi ridicate de peste 250°C, cu descompunere;</li>
+        <li>sunt solubili în apă;</li>
+        <li>sunt insolubili în solvenți organici;</li>
+        <li>numeroși aminoacizi prezintă gust dulce;</li>
+        <li>prezintă puncte de topire mai ridicate decât ale acizilor corespunzători – p.t. acid acetic = +16,6°C și p.t. glicocol = +232°C; acest lucru este justificat de atracțiile electrostatice puternice care se stabilesc între sarcinile de semn contrar ale amfionilor.</li>
+    </ul>
+
+    <h2>Proprietăți chimice</h2>
+    <div class="alert alert-secondary" style="background:#f7e6b3;border-left:4px solid #f7b267;padding:12px 18px;margin:18px 0 14px 0;">
+        <strong>IMPORTANT:</strong>
+        <p style="margin-bottom:0;">Prezența celor două grupe funcționale în molecula unui aminoacid, dictează comportamentul chimic al acestuia.</p>
+    </div>
+
+    <h3>Reacția de ionizare și caracterul amfoter</h3>
+    <div style="text-align:center;margin:24px 0;">
+        <img src="/imgamino16.jpg" alt="Reacția de ionizare" style="max-width:420px;width:100%;height:auto;border-radius:16px;box-shadow:0 4px 18px rgba(44,62,80,0.10);margin-bottom:10px;" />
+        <p class="image-caption">Reacția de ionizare a unui aminoacid în detaliu.</p>
+    </div>
+
+    <div class="alert alert-info" style="background:#eaf6fb;border-left:4px solid #3a7ca5;padding:12px 18px;margin:18px 0 14px 0;">
+        <p>În reacția de ionizare, grupa carboxil (–COOH) cedează un proton grupei amino (–NH₂), care îl acceptă pe dubletul său de electroni, formând o legătură covalent coordinativă. Astfel, se formează un ion carboxilat (–COO⁻) și un ion amoniu substituit (–NH₃⁺). Rezultatul este un amfion (formă dipolară), cu sarcini opuse în aceeași moleculă. Echilibrul reacției este deplasat aproape complet spre formarea amfionului.</p>
+    </div>
+
+    <div style="text-align:center;margin:24px 0;">
+        <img src="/imgamino17.jpg" alt="Schema generală de reacție a unui amfion" style="max-width:420px;width:100%;height:auto;border-radius:16px;box-shadow:0 4px 18px rgba(44,62,80,0.10);margin-bottom:10px;" />
+        <p class="image-caption">Schema generală de reacție a unui amfion în mediu bazic, când se obține un anion și în mediu acid, când se obține un cation.</p>
+    </div>
+
+    <div class="alert alert-success" style="background:#eafbe6;border-left:4px solid #3bbf5c;padding:12px 18px;margin:18px 0 14px 0;">
+        <strong>IMPORTANT DE REȚINUT:</strong>
+        <p style="margin-bottom:0;">Soluțiile apoase de aminoacizi își mențin pH-ul relativ constant la adăugarea unei cantități mici de acid sau bază tare, datorită formei dipolare (amfion). Acest comportament este specific soluțiilor tampon.</p>
+    </div>
+
+    <div style="text-align:center;margin:24px 0;">
+        <img src="/imgamino18.jpg" alt="Schema de reacție cu NaOH" style="max-width:420px;width:100%;height:auto;border-radius:16px;box-shadow:0 4px 18px rgba(44,62,80,0.10);margin-bottom:10px;" />
+        <p class="image-caption">Schema de reacție detaliată care are loc prin introducerea glicinei în mediu bazic (NaOH).</p>
+    </div>
+
+    <div style="text-align:center;margin:24px 0;">
+        <img src="/imgamino19.jpg" alt="Schema de reacție cu HCl" style="max-width:420px;width:100%;height:auto;border-radius:16px;box-shadow:0 4px 18px rgba(44,62,80,0.10);margin-bottom:10px;" />
+        <p class="image-caption">Schema de reacție detaliată care are loc prin introducerea glicinei în mediu acid (HCl).</p>
+    </div>
+
+    <div class="alert alert-warning" style="background:#fffbe6;border-left:4px solid #f7b267;padding:12px 18px;margin:18px 0 14px 0;">
+        <strong>OBSERVAȚIE:</strong>
+        <p>În soluții bazice, aminoacizii sunt sub formă de anioni, iar în soluții acide sunt sub formă de cationi.</p>
+        <p style="margin-bottom:0;">Ionii care există în soluția apoasă a unui aminoacid monoaminomonocarboxilic, sunt prezentați în imaginea de mai jos:</p>
+    </div>
+
+    <div style="text-align:center;margin:24px 0;">
+        <img src="/imgamino20.jpg" alt="Ionii în soluția apoasă" style="max-width:420px;width:100%;height:auto;border-radius:16px;box-shadow:0 4px 18px rgba(44,62,80,0.10);margin-bottom:10px;" />
+    </div>
+
+    <h2>Importanța aminoacizilor în organism</h2>
+    <div class="table-responsive">
+        <table class="chemistry-table" style="background:rgba(255,255,255,0.7);border-radius:16px;overflow:hidden;box-shadow:0 4px 18px rgba(44,62,80,0.10);">
+            <thead>
+                <tr>
+                    <th style="background:rgba(59,95,255,0.1);padding:12px;border:1px solid rgba(0,0,0,0.1);">Aminoacid</th>
+                    <th style="background:rgba(59,95,255,0.1);padding:12px;border:1px solid rgba(0,0,0,0.1);">Rol principal în organism</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);">Leucină</td>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);">Stimulează sinteza proteinelor musculare, ajută la refacerea țesuturilor</td>
+                </tr>
+                <tr>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);">Izoleucină</td>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);">Producerea de energie, reglarea glicemiei, vindecarea rănilor</td>
+                </tr>
+                <tr>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);">Valină</td>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);">Regenerarea țesuturilor, menținerea echilibrului azotului</td>
+                </tr>
+                <tr>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);">Triptofan</td>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);">Precursor al serotoninei și melatoninei (starea de spirit și somn)</td>
+                </tr>
+                <tr>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);">Fenilalanină</td>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);">Precursor al neurotransmițătorilor (dopamină, adrenalină), funcționarea sistemului nervos</td>
+                </tr>
+                <tr>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);">Glutamină</td>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);">Sprijină imunitatea și sănătatea intestinelor, sursă de energie în perioade de stres</td>
+                </tr>
+                <tr>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);">Arginină</td>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);">Stimulează circulația (oxid nitric), susține vindecarea și funcția imunitară</td>
+                </tr>
+                <tr>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);">Cisteină</td>
+                    <td style="padding:12px;border:1px solid rgba(0,0,0,0.1);">Antioxidant (glutation), benefică pentru piele, păr și unghii</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2>Aplicații practice</h2>
+    <div class="alert alert-success" style="background:#eafbe6;border-left:4px solid #3bbf5c;padding:12px 18px;margin:18px 0 14px 0;">
+        <strong>1. Nutriție și suplimente alimentare</strong>
+        <ul style="margin-bottom:0;">
+            <li>Leucina, izoleucina și valina sunt frecvent folosiți în suplimente pentru sportivi.</li>
+            <li>Glutamina.</li>
+        </ul>
+    </div>
+
+    <div class="alert alert-info" style="background:#eaf6fb;border-left:4px solid #3a7ca5;padding:12px 18px;margin:18px 0 14px 0;">
+        <strong>2. Industria farmaceutică</strong>
+        <ul style="margin-bottom:0;">
+            <li>L-DOPA, derivat al tirozinei, este folosit în tratamentul bolii Parkinson.</li>
+            <li>Cisteina este folosită în medicamente pentru fluidizarea mucusului (ex: acetilcisteina).</li>
+        </ul>
+    </div>
+
+    <div class="alert alert-secondary" style="background:#f7e6b3;border-left:4px solid #f7b267;padding:12px 18px;margin:18px 0 14px 0;">
+        <strong>3. Cosmetice</strong>
+        <ul style="margin-bottom:0;">
+            <li>Arginina este adăugată în creme și loțiuni pentru regenerarea pielii.</li>
+            <li>Cisteina este folosită în tratamente pentru îndreptarea părului, datorită conținutului de sulf.</li>
+        </ul>
+    </div>
+
+    <div class="alert alert-warning" style="background:#fffbe6;border-left:4px solid #f7b267;padding:12px 18px;margin:18px 0 14px 0;">
+        <strong>4. Agricultură</strong>
+        <ul style="margin-bottom:0;">
+            <li>Aminoacizii liberi sunt incluși în fertilizanți foliar pentru a stimula fotosinteza și absorbția mineralelor.</li>
+            <li>Exemple: produse pe bază de acid glutamic sau glicină.</li>
+        </ul>
+    </div>
+
+    <div class="alert alert-info" style="background:#eaf6fb;border-left:4px solid #3a7ca5;padding:12px 18px;margin:18px 0 14px 0;">
+        <strong>5. Biotehnologie și cercetare</strong>
+        <ul style="margin-bottom:0;">
+            <li>Triptofanul este folosit pentru studiile legate de biosinteza serotoninei.</li>
+            <li>Medii de cultură conțin adesea aminoacizi esențiali pentru creșterea bacteriilor modificate genetic.</li>
+        </ul>
+    </div>
+
+    <div class="alert alert-success" style="background:#eafbe6;border-left:4px solid #3bbf5c;padding:12px 18px;margin:18px 0 14px 0;">
+        <strong>6. Industria alimentară</strong>
+        <ul style="margin-bottom:0;">
+            <li>Glutamatul monosodic (MSG) este un aditiv alimentar folosit pentru a accentua gustul „umami" în supe, sosuri și condimente.</li>
+            <li>Aspartamul, un îndulcitor artificial, este un dipeptid format din acid aspartic și fenilalanină.</li>
+        </ul>
+    </div>
+</div>
+<div class="lesson-section glass-card" style="margin-bottom:28px;">
+    <h2>Testează-te rapid!</h2>    <div class="embed-responsive-center">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfXfPjW2LdTRbY0gTLDur-CSIZITXQRkIju4NE_RgaOOSRvTA/viewform?embedded=true" width="100%" height="420" frameborder="0" marginheight="0" marginwidth="0">Se încarcă…</iframe>
+    </div>    <div class="mt-3">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfXfPjW2LdTRbY0gTLDur-CSIZITXQRkIju4NE_RgaOOSRvTA/viewform" target="_blank" class="btn btn-primary">Deschide testul pe Google</a>
+    </div>
+</div>
+<div class="lesson-section glass-card" style="margin-bottom:28px;">    <h2>Probleme</h2>
+    <div class="problem-card" style="margin-bottom:24px;">
+        <strong>Problema 1:</strong>
+        <div style="text-align:center;margin:16px 0;">
+            <img src="/imgaminoprob1.jpg" alt="Problema 1" style="max-width:100%;height:auto;border-radius:12px;box-shadow:0 4px 18px rgba(44,62,80,0.10);" />
+        </div>
+    </div>
+    <div class="problem-card" style="margin-bottom:24px;">
+        <strong>Problema 2:</strong>
+        <div style="text-align:center;margin:16px 0;">
+            <img src="/imgaminoprob2.jpg" alt="Problema 2" style="max-width:100%;height:auto;border-radius:12px;box-shadow:0 4px 18px rgba(44,62,80,0.10);" />
+        </div>
+    </div>
+    <div class="problem-card">
+        <strong>Problema 3:</strong>
+        <div style="text-align:center;margin:16px 0;">
+            <img src="/imgaminoprob3.jpg" alt="Problema 3" style="max-width:100%;height:auto;border-radius:12px;box-shadow:0 4px 18px rgba(44,62,80,0.10);" />
+        </div>
+    </div>
+</div>
+<div class="lesson-section glass-card" style="margin-bottom:28px;">
+    <h2>Jocuri interactive</h2>    <div class="embed-responsive-center">
+        <iframe src="https://wordwall.net/embed/8b95b7bfba3647aaa5ce5be4f3b63184?themeId=41&templateId=3&fontStackId=0" width="100%" height="380" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+<div class="mt-4">
+    <a href="/Transpozitie" class="btn btn-secondary me-2">Înapoi la Reacția de Transpoziție</a>
+    <a href="/Proteine" class="btn btn-primary">Treci la Proteine</a>
+</div>
+<script src="/js/feedback.js"></script>
+
+<style>
+.chemistry-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: rgba(255,255,255,0.7);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 18px rgba(44,62,80,0.10);
+}
+
+.chemistry-table th,
+.chemistry-table td {
+    padding: 12px;
+    border: 1px solid rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.chemistry-table th {
+    background: rgba(59,95,255,0.1);
+    font-weight: 600;
+}
+
+.formula-image {
+    max-height: 60px;
+    display: block;
+    margin: 0 auto;
+}
+
+.theme-dark .chemistry-table {
+    background: rgba(35,41,70,0.95);
+    color: #000000;
+}
+
+.theme-dark .chemistry-table th {
+    background: rgba(59,95,255,0.3);
+    color: #000000;
+    border-color: rgba(255,255,255,0.2);
+}
+
+.theme-dark .chemistry-table td {
+    border-color: rgba(255,255,255,0.2);
+    color: #000000;
+}
+
+.table-responsive {
+    overflow-x: auto;
+    margin: 20px 0;
+}
+
+.embed-responsive-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+</style>

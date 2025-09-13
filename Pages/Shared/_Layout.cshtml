@@ -1,0 +1,327 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chimie organică</title>
+    <link rel="icon" type="image/png" href="~/favicon.png" />
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/chimie.styles.css" asp-append-version="true" />
+    <style>
+        body {
+            background: linear-gradient(120deg, #b3d8f7 0%, #f7e6b3 100%);
+            min-height: 100vh;
+        }
+        .navbar, .footer {
+            background: #3a7ca5 !important;
+        }
+        .navbar .navbar-brand, .navbar .nav-link, .footer a {
+            color: #fff !important;
+            font-weight: 500;
+        }
+        .navbar .nav-link.active, .navbar .nav-link:focus, .navbar .nav-link:hover {
+            color: #f7e6b3 !important;
+        }
+        .sidebar {
+            background: #eaf6fb;
+            box-shadow: 2px 0 10px rgba(44,62,80,0.07);
+        }
+        .main-content {
+            background: rgba(255,255,255,0.97);
+            border-radius: 18px;
+            box-shadow: 0 4px 24px 0 rgba(44,62,80,0.08);
+        }
+        .btn-primary {
+            background: linear-gradient(90deg, #3a7ca5 0%, #f7b267 100%);
+            border: none;
+            color: #fff;
+            font-weight: 600;
+            box-shadow: 0 2px 8px rgba(44,62,80,0.10);
+            transition: transform 0.1s, box-shadow 0.1s;
+        }
+        .btn-primary:hover, .btn-primary:focus {
+            background: linear-gradient(90deg, #f7b267 0%, #3a7ca5 100%);
+            color: #3a7ca5;
+            transform: translateY(-2px) scale(1.04);
+            box-shadow: 0 4px 16px rgba(44,62,80,0.18);
+        }
+        .btn-secondary {
+            background: #f7e6b3;
+            color: #3a7ca5;
+            border: none;
+            font-weight: 500;
+            transition: background 0.2s, color 0.2s;
+        }
+        .btn-secondary:hover, .btn-secondary:focus {
+            background: #b3d8f7;
+            color: #f7b267;
+        }
+        h1, h2, h3, h4 {
+            color: #3a7ca5;
+            font-weight: 700;
+        }
+        label {
+            color: #3a7ca5;
+        }
+        select.form-select {
+            border-radius: 8px;
+            border: 1.5px solid #b3d8f7;
+            background: #eaf6fb;
+            color: #3a7ca5;
+            font-weight: 500;
+            transition: border 0.2s;
+        }
+        select.form-select:focus {
+            border: 1.5px solid #f7b267;
+            outline: none;
+        }
+        .theme-dark body {
+            background: linear-gradient(120deg, #232946 0%, #3b2f4a 100%);
+        }
+        .theme-dark .navbar, .theme-dark .footer {
+            background: #232946 !important;
+        }
+        .theme-dark .navbar .navbar-brand, .theme-dark .navbar .nav-link, .theme-dark .footer a {
+            color: #fff !important;
+        }
+        .theme-dark .navbar .nav-link.active, .theme-dark .navbar .nav-link:focus, .theme-dark .navbar .nav-link:hover {
+            color: #eebbc3 !important;
+        }
+        .theme-dark .sidebar {
+            background: #282a36;
+            box-shadow: 2px 0 10px rgba(44,62,80,0.12);
+        }
+        .theme-dark .main-content {
+            background: rgba(35,41,70,0.92);
+            color: #fff;
+        }
+        .theme-dark .btn-primary {
+            background: linear-gradient(90deg, #232946 0%, #5f6caf 100%);
+            color: #fff;
+        }
+        .theme-dark .btn-primary:hover, .theme-dark .btn-primary:focus {
+            background: linear-gradient(90deg, #5f6caf 0%, #232946 100%);
+            color: #eebbc3;
+        }
+        .theme-dark .btn-secondary {
+            background: #393e5c;
+            color: #eebbc3;
+        }
+        .theme-dark .btn-secondary:hover, .theme-dark .btn-secondary:focus {
+            background: #232946;
+            color: #fff;
+        }
+        .theme-dark h1, .theme-dark h2, .theme-dark h3, .theme-dark h4, .theme-dark label {
+            color: #eebbc3;
+        }
+        .theme-dark select.form-select {
+            border: 1.5px solid #5f6caf;
+            background: #232946;
+            color: #eebbc3;
+        }
+        .theme-dark select.form-select:focus {
+            border: 1.5px solid #eebbc3;
+        }
+        .theme-molecule body {
+            background: linear-gradient(120deg, #e0f7fa 0%, #b2ebf2 100%);
+        }
+        .theme-molecule .navbar, .theme-molecule .footer, .theme-molecule .footer-bar {
+            background: #0097a7 !important;
+        }
+        .theme-molecule .main-content, .theme-molecule .glass-card {
+            background: rgba(224,247,250,0.92) !important;
+            color: #006064 !important;
+        }
+        .theme-molecule h1, .theme-molecule h2, .theme-molecule h3, .theme-molecule h4, .theme-molecule label {
+            color: #0097a7 !important;
+        }
+        .theme-molecule .btn-primary {
+            background: linear-gradient(90deg, #00bcd4 0%, #8bc34a 100%);
+            color: #fff;
+        }
+        .theme-molecule .btn-primary:hover, .theme-molecule .btn-primary:focus {
+            background: linear-gradient(90deg, #8bc34a 0%, #00bcd4 100%);
+            color: #0097a7;
+        }
+        .theme-molecule .sidebar {
+            background: #b2ebf2 !important;
+        }
+        .theme-molecule .search-results-list {
+            background: #e0f7fa !important;
+            color: #006064 !important;
+        }
+        .theme-molecule .search-results-list li.active, .theme-molecule .search-results-list li:hover {
+            background: #b2ebf2 !important;
+            color: #0097a7 !important;
+        }
+        .theme-atomic body {
+            background: linear-gradient(120deg, #ede7f6 0%, #b39ddb 100%);
+        }
+        .theme-atomic .navbar, .theme-atomic .footer, .theme-atomic .footer-bar {
+            background: #7c43bd !important;
+        }
+        .theme-atomic .main-content, .theme-atomic .glass-card {
+            background: rgba(237,231,246,0.92) !important;
+            color: #4a148c !important;
+        }
+        .theme-atomic h1, .theme-atomic h2, .theme-atomic h3, .theme-atomic h4, .theme-atomic label {
+            color: #7c43bd !important;
+        }
+        .theme-atomic .btn-primary {
+            background: linear-gradient(90deg, #7c43bd 0%, #fbbf24 100%);
+            color: #fff;
+        }
+        .theme-atomic .btn-primary:hover, .theme-atomic .btn-primary:focus {
+            background: linear-gradient(90deg, #fbbf24 0%, #7c43bd 100%);
+            color: #7c43bd;
+        }
+        .theme-atomic .sidebar {
+            background: #ede7f6 !important;
+        }
+        .theme-atomic .search-results-list {
+            background: #ede7f6 !important;
+            color: #4a148c !important;
+        }
+        .theme-atomic .search-results-list li.active, .theme-atomic .search-results-list li:hover {
+            background: #b39ddb !important;
+            color: #7c43bd !important;
+        }
+        .theme-classic body {
+            background: linear-gradient(120deg, #fffde4 0%, #f7e6b3 100%);
+        }
+        .theme-classic .navbar, .theme-classic .footer, .theme-classic .footer-bar {
+            background: #bfa14a !important;
+        }
+        .theme-classic .main-content, .theme-classic .glass-card {
+            background: rgba(255,253,228,0.96) !important;
+            color: #7c6f3a !important;
+        }
+        .theme-classic h1, .theme-classic h2, .theme-classic h3, .theme-classic h4, .theme-classic label {
+            color: #bfa14a !important;
+        }
+        .theme-classic .btn-primary {
+            background: linear-gradient(90deg, #bfa14a 0%, #f7b267 100%);
+            color: #fff;
+        }
+        .theme-classic .btn-primary:hover, .theme-classic .btn-primary:focus {
+            background: linear-gradient(90deg, #f7b267 0%, #bfa14a 100%);
+            color: #bfa14a;
+        }
+        .theme-classic .sidebar {
+            background: #fffde4 !important;
+        }
+        .theme-classic .search-results-list {
+            background: #fffde4 !important;
+            color: #7c6f3a !important;
+        }
+        .theme-classic .search-results-list li.active, .theme-classic .search-results-list li:hover {
+            background: #f7e6b3 !important;
+            color: #bfa14a !important;
+        }
+        /* Buton de schimbare temă */
+        .theme-toggle-btn {
+            position: fixed;
+            top: 20px;
+            right: 30px;
+            z-index: 2000;
+            background: #fff;
+            color: #232946;
+            border: 2px solid #232946;
+            border-radius: 30px;
+            padding: 8px 22px;
+            font-weight: 600;
+            box-shadow: 0 2px 8px rgba(44,62,80,0.10);
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+        }
+        .theme-dark .theme-toggle-btn {
+            background: #232946;
+            color: #eebbc3;
+            border: 2px solid #eebbc3;
+        }
+    </style>
+</head>
+<body>
+    <div id="particles-js" style="position:fixed;z-index:0;top:0;left:0;width:100vw;height:100vh;pointer-events:none;"></div>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Acasă</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Informații</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="footer-bar" style="width:100%;background:rgba(35,41,70,0.98);color:#eebbc3;display:flex;align-items:center;justify-content:center;gap:32px;padding:18px 0 14px 0;position:fixed;left:0;bottom:0;z-index:4000;font-size:1.08rem;box-shadow:0 -2px 16px rgba(35,41,70,0.12);">
+        <span style="font-weight:600;">&copy; 2025</span>
+        <a href="/" style="color:#eebbc3;text-decoration:none;font-weight:500;transition:color 0.2s;">Acasă</a>
+        <a href="/Privacy" style="color:#eebbc3;text-decoration:none;font-weight:500;transition:color 0.2s;">Informații</a>
+    </footer>
+    <button id="theme-toggle-btn" class="theme-toggle-btn" title="Schimbă tema" aria-label="Schimbă tema">🌙</button>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/feedback.js" asp-append-version="true"></script>
+    <script>
+    // Buton simplu de switch light/dark theme, robust
+    (function() {
+        const THEME_KEY = 'theme';
+        const html = document.documentElement;
+        const body = document.body;
+        const themeClass = 'theme-dark';
+        function applyTheme(theme) {
+            if (theme === 'dark') {
+                html.classList.add(themeClass);
+                body.classList.add(themeClass);
+                var btn = document.getElementById('theme-toggle-btn');
+                if(btn) btn.textContent = '☀️';
+            } else {
+                html.classList.remove(themeClass);
+                body.classList.remove(themeClass);
+                var btn = document.getElementById('theme-toggle-btn');
+                if(btn) btn.textContent = '🌙';
+            }
+        }
+        function getTheme() {
+            return localStorage.getItem(THEME_KEY) === 'dark' ? 'dark' : 'light';
+        }
+        function setTheme(theme) {
+            localStorage.setItem(THEME_KEY, theme);
+            applyTheme(theme);
+        }
+        document.addEventListener('DOMContentLoaded', function() {
+            applyTheme(getTheme());
+            var btn = document.getElementById('theme-toggle-btn');
+            if(btn) {
+                btn.addEventListener('click', function() {
+                    setTheme(getTheme() === 'dark' ? 'light' : 'dark');
+                });
+            }
+        });
+        window.addEventListener('storage', function(e) {
+            if (e.key === THEME_KEY) applyTheme(getTheme());
+        });
+    })();
+    </script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
