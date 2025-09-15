@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alexa\\OneDrive\\Documents\\lucrez\\SITE CHIMIE FINAL\\31.05 FIIIINIIISH\\chimie\\chimie.csproj": {}
+    "C:\\Users\\ovide\\Desktop\\chimie_david_ovidiu\\chimie\\chimie.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alexa\\OneDrive\\Documents\\lucrez\\SITE CHIMIE FINAL\\31.05 FIIIINIIISH\\chimie\\chimie.csproj": {
+    "C:\\Users\\ovide\\Desktop\\chimie_david_ovidiu\\chimie\\chimie.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alexa\\OneDrive\\Documents\\lucrez\\SITE CHIMIE FINAL\\31.05 FIIIINIIISH\\chimie\\chimie.csproj",
+        "projectUniqueName": "C:\\Users\\ovide\\Desktop\\chimie_david_ovidiu\\chimie\\chimie.csproj",
         "projectName": "chimie",
-        "projectPath": "C:\\Users\\alexa\\OneDrive\\Documents\\lucrez\\SITE CHIMIE FINAL\\31.05 FIIIINIIISH\\chimie\\chimie.csproj",
-        "packagesPath": "C:\\Users\\alexa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alexa\\OneDrive\\Documents\\lucrez\\SITE CHIMIE FINAL\\31.05 FIIIINIIISH\\chimie\\obj\\",
+        "projectPath": "C:\\Users\\ovide\\Desktop\\chimie_david_ovidiu\\chimie\\chimie.csproj",
+        "packagesPath": "C:\\Users\\ovide\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ovide\\Desktop\\chimie_david_ovidiu\\chimie\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\alexa\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\ovide\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"

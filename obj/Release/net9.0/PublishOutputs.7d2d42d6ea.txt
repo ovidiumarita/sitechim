@@ -1,0 +1,7 @@
+C:\Users\ovide\Desktop\chimie_david_ovidiu\chimie\out\chimie.exe
+C:\Users\ovide\Desktop\chimie_david_ovidiu\chimie\out\appsettings.Development.json
+C:\Users\ovide\Desktop\chimie_david_ovidiu\chimie\out\appsettings.json
+C:\Users\ovide\Desktop\chimie_david_ovidiu\chimie\out\chimie.dll
+C:\Users\ovide\Desktop\chimie_david_ovidiu\chimie\out\chimie.deps.json
+C:\Users\ovide\Desktop\chimie_david_ovidiu\chimie\out\chimie.runtimeconfig.json
+C:\Users\ovide\Desktop\chimie_david_ovidiu\chimie\out\chimie.pdb
